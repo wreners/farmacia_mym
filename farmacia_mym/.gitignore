@@ -1,0 +1,46 @@
+# Archivos de Visual Studio
+.vs/
+*.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de compilación
+bin/
+obj/
+out/
+Debug/
+Release/
+
+# Archivos de configuración
+*.db
+*.mdf
+*.ldf
+
+# Archivos de paquetes
+packages/
+*.nupkg
+*.snupkg
+
+# Archivos de logs
+*.log
+
+# Archivos de usuario
+appsettings.Development.json
+appsettings.Production.json
+
+# Archivos de caché
+*.cache
+*.tmp
+
+# Archivos de dependencias de npm (si aplica)
+node_modules/
+
+# Archivos de entornos de desarrollo
+.env
+*.env
+
+# Otros
+.DS_Store
+Thumbs.db
