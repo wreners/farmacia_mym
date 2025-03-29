@@ -10,22 +10,19 @@
     <div class="col-md-4">
         <form method="post">
             <div class="form-group">
-                <label asp-for="Input.Username"></label>
-                <input asp-for="Input.Username" class="form-control" />
-                <span asp-validation-for="Input.Username" class="text-danger"></span>
+                <label asp-for="User"></label>
+                <input asp-for="User" class="form-control" required />
+                <span asp-validation-for="User" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Input.Password"></label>
-                <input asp-for="Input.Password" class="form-control" />
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" id="password" required />
+                <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
             </div>
         </form>
-        <div>
-            <p>No tienes una cuenta? <a href="/Register">Regístrate aquí</a></p>
-        </div>
     </div>
 </div>
 

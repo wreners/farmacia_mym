@@ -26,7 +26,7 @@ namespace farmacia_mym.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Rol = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    UsuarioName = table.Column<string>(type: "longtext", nullable: false)
+                    User = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Clave = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4")

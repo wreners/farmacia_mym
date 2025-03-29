@@ -45,7 +45,7 @@ namespace farmacia_mym.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("UsuarioName")
+                    b.Property<string>("User")
                         .IsRequired()
                         .HasColumnType("longtext");
 

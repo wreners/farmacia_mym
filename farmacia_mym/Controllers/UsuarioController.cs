@@ -3,6 +3,7 @@
     using farmacia_mym.Data;
     using farmacia_mym.Models;
     using Microsoft.AspNetCore.Mvc;
+    using BCrypt.Net;
     public class UsuarioController : Controller
     {
         private readonly IUsuarioRepository _usuarioRepository;
@@ -38,6 +39,9 @@
         {
             if (ModelState.IsValid)
             {
+                // Hashear la contraseña antes de almacenar
+                usuario.Clave = BCrypt.HashPassword(usuario.Clave);
+
                 _usuarioRepository.Add(usuario);
                 return RedirectToAction(nameof(Index));
             }

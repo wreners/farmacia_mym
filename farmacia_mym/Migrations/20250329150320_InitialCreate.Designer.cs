@@ -11,7 +11,7 @@ using farmacia_mym.Models;
 namespace farmacia_mym.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250320082824_InitialCreate")]
+    [Migration("20250329150320_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -48,7 +48,7 @@ namespace farmacia_mym.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("UsuarioName")
+                    b.Property<string>("User")
                         .IsRequired()
                         .HasColumnType("longtext");
 
