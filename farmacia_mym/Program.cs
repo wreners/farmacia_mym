@@ -33,8 +33,10 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Usuarios}/{action=Index}/{id?}");
+// Redirigir la URL base a la página deseada
+app.MapGet("/", async context =>
+{
+    context.Response.Redirect("./Login"); // Cambia esto a la página deseada
+});
 
 app.Run();

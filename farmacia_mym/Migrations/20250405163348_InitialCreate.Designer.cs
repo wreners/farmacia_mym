@@ -11,7 +11,7 @@ using farmacia_mym.Models;
 namespace farmacia_mym.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250329150320_InitialCreate")]
+    [Migration("20250405163348_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
