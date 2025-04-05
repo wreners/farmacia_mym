@@ -1,0 +1,66 @@
+﻿@page
+@model farmacia_mym.Pages.AdministrationPanelModel
+@{
+    Layout = "/Pages/Shared/AdminLayout.cshtml"; // Especificar el nuevo layout
+    ViewData["Title"] = "Panel de Administración";
+}
+
+<!-- Encabezado -->
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2 text-center">Panel de Administración</h1>
+    <div class="d-flex align-items-center">
+        <!-- Información del usuario -->
+        <div class="d-flex align-items-center">
+            <img src="https://i.pravatar.cc/40" alt="Usuario" class="rounded-circle me-2" width="40" height="40">
+            <div>
+                <strong>Edwin Patzan</strong>
+                <br>
+                <small class="text-muted">Administrador</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Área de contenido -->
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-center">GESTIÓN DE INVENTARIO</h5>
+                <p class="card-text text-center">Administra los productos en stock.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-center">REGISTRO DE VENTAS</h5>
+                <p class="card-text text-center">Registra las ventas diarias de la farmacia.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-center">CAJA</h5>
+                <p class="card-text text-center">Controla los ingresos y egresos.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-center">AGREGAR USUARIO</h5>
+                <p class="card-text text-center">Agrega nuevos usuarios al sistema.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-center">PROVEEDORES</h5>
+                <p class="card-text text-center">Gestiona los proveedores de la farmacia.</p>
+            </div>
+        </div>
+    </div>
+</div>

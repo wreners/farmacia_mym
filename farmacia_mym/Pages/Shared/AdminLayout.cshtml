@@ -1,0 +1,93 @@
+﻿@{
+    Layout = null; // Asegura que no se herede otro layout accidentalmente
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Administración</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header id="layout" class="text-white p-1">
+        <div class="container">
+            <h3 class="mb-0">Farmacia M&M</h3>
+        </div>
+    </header>
+
+    <!-- Contenedor principal que se expande para ocupar el alto restante -->
+    <div class="d-flex flex-grow-1">
+        <div class="container-fluid">
+            <div class="row h-100">
+                <!-- Sidebar -->
+                <nav id="sidebar" class="col-md-2 bg-success sidebar">
+                    <div class="sidebar-sticky pt-3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <span data-feather="home"></span> INICIO
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <span data-feather="users"></span> INVENTARIO
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <span data-feather="file-text"></span> VENTAS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <span data-feather="shopping-cart"></span> CAJA
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <span data-feather="settings"></span> REPORTES
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <span data-feather="settings"></span> AGREGAR USUARIO
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <span data-feather="settings"></span> PROVEEDORES
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <span data-feather="log-out"></span> SALIR
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Contenido Principal -->
+                <main role="main" class="col-md-10 px-4">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="layout" class="text-white p-1">
+        <div class="container text-center">
+            <p class="mb-0">© Copyright @DateTime.Now.Year Farmacia M&M</p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
