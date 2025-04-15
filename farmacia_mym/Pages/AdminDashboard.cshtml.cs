@@ -7,6 +7,7 @@ namespace farmacia_mym.Pages
     {
         public void OnGet()
         {
+       
         }
     }
 }

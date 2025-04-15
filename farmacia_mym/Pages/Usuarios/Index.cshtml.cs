@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using farmacia_mym.Models;
 using farmacia_mym.Data;
 using System.Collections.Generic;
+using farmacia_mym.Pages.Shared;
 
 namespace farmacia_mym.Pages.Usuarios
 {

@@ -1,5 +1,6 @@
 ﻿@{
     Layout = null; // Asegura que no se herede otro layout accidentalmente
+    
 }
 
 <!DOCTYPE html>
@@ -15,17 +16,25 @@
 
     <!-- Header -->
     <header id="layout" class="text-white p-1">
-        <div class="container">
-            <h3 class="mb-0">Farmacia M&M</h3>
+            <div class="text-center">
+                <img src="~/images/lgo.jpg" alt="Logo de Farmacia M&M" class="logo" />
+        </div>
+        <div class="d-flex align-items-center">
+            <img src="https://i.pravatar.cc/40" alt="Usuario" class="rounded-circle me-2" width="40" height="40">
+            <div>
+                <strong>Mecha</strong>
+                <br>
+                <small class="text-muted">Administrador</small>
+            </div>
         </div>
     </header>
 
     <!-- Contenedor principal que se expande para ocupar el alto restante -->
-    <div class="d-flex flex-grow-1">
+  <!--  <div class="d-flex flex-grow-1">
         <div class="container-fluid">
-            <div class="row h-100">
+            <div class="row h-100">-->
                 <!-- Sidebar -->
-                <nav id="sidebar" class="col-md-2 bg-success sidebar">
+              <!--  <nav id="sidebar" class="col-md-2 bg-success sidebar">
                     <div class="sidebar-sticky pt-3">
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -70,15 +79,19 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </nav> -->
 
-                <!-- Contenido Principal -->
+                <!-- Contenido Principal 
                 <main role="main" class="col-md-10 px-4">
-                    @RenderBody()
+                    
                 </main>
             </div>
         </div>
-    </div>
+    </div>-->
+
+    <main role="main" class="col-md-10 px-4">
+        @RenderBody()
+    </main>
 
     <!-- Footer -->
     <footer id="layout" class="text-white p-1">

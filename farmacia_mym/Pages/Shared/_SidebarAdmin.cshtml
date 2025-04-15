@@ -1,0 +1,60 @@
+﻿@page
+@model farmacia_mym.Pages.Shared._SidebarAdminModel
+@{
+    var showSidebar = ViewData["ShowSidebar"] != null && (bool)ViewData["ShowSidebar"];
+}
+
+@if (showSidebar)
+{
+    <nav id="sidebar" class="col-md-2 bg-success sidebar">
+        <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-page="/Inicio">
+                        <span data-feather="home"></span> INICIO
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-page="/Inventario">
+                        <span data-feather="users"></span> INVENTARIO
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-page="/Ventas">
+                        <span data-feather="file-text"></span> VENTAS
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-page="/Caja">
+                        <span data-feather="shopping-cart"></span> CAJA
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-page="/Reportes">
+                        <span data-feather="settings"></span> REPORTES
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-page="/AgregarUsuario">
+                        <span data-feather="settings"></span> AGREGAR USUARIO
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-page="/Proveedores">
+                        <span data-feather="settings"></span> PROVEEDORES
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" asp-page="/Salir">
+                        <span data-feather="log-out"></span> SALIR
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace()
+    </script>
+}

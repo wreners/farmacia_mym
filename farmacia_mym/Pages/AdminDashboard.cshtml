@@ -2,9 +2,24 @@
 @model farmacia_mym.Pages.AdminDashboardModel
 @{
     ViewData["Title"] = "Home Admin";
+    Layout = "/Pages/Shared/AdminLayout.cshtml"; // Especificar el nuevo layout
+    
 }
 
-<div class="text-center">
-    <h1 class="display-4">LOGIN</h1>
-    <p>LOGIN CORRECTO ADMIN</p>
-</div>
+
+<!--BOTONES CENTRALES-->
+<main>
+    <h1>PANEL DE ADMINISTRACION</h1>
+    <div class="button-container">
+        <button class="action-button">GESTION DE INVENTARIO</button>
+        <button class="action-button">REGISTRO DE VENTAS</button>
+        <button class="action-button">CAJA</button>
+    </div>
+    <div class="button-container">
+        <form method="get" asp-page="/Usuarios/Index">
+            <button class="action-button">ADMINISTRAR USUARIOS</button>
+        </form>
+        
+    <button class="action-button">PROVEEDORES</button>
+    </div>
+</main>

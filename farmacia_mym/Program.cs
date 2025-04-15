@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using farmacia_mym.Models;
 using farmacia_mym.Data;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddRazorPages();
 
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
-
+//builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+   // .AddEntityFrameworkStores<ApplicationDbContext>()
+   // .AddDefaultTokenProviders();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

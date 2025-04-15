@@ -7,6 +7,7 @@ namespace farmacia_mym.Pages
 {
     public class LoginModel : PageModel
     {
+
         private readonly string connectionString = "Server=127.0.0.1;Port=3306;Database=farmacia;User Id=FARMACIAMYM;Password=123456;";
 
         [BindProperty]
@@ -19,7 +20,7 @@ namespace farmacia_mym.Pages
 
         public void OnGet()
         {
-            // Aquí puedes inicializar cualquier dato necesario para el método GET.
+   
         }
 
         public IActionResult OnPost()

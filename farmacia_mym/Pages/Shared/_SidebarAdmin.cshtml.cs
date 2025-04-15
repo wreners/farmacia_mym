@@ -1,12 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace farmacia_mym.Pages
+namespace farmacia_mym.Pages.Shared
 {
-    public class AdministrationPanelModel : PageModel
+    public class _SidebarAdminModel : PageModel
     {
         public void OnGet()
         {
         }
+
     }
 }
